@@ -24,3 +24,16 @@ config/ donde iremos copiando los ficheros de script necesarios paraprovisionar 
 Lo siguiente que haremos sera arrancar la maquina y comprobar que la red esta correctamente
 
 ![Maquina arrancada y red activa](img/03-red-servidor.png)
+
+## 3. Instalación de servidor DNS
+
+Arrancamos la maquina , accedemos con ssh y descargamos los paquetes:
+- bind9
+- bind9utils
+- bind9-doc
+
+![Comandos de instalacion](img/04-comandos-instalacion.png)
+![Comprobacion de instalacion de paquetes](img/05-comprobacion-paquetes.png)
+
+Creamos el archivo 01-instalar.sh en la carpeta config/ 
+![Arhcivo 01-instalar.sh](img/06-instalar-sh.png)
