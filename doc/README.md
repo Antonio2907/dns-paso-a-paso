@@ -37,3 +37,27 @@ Arrancamos la maquina , accedemos con ssh y descargamos los paquetes:
 
 Creamos el archivo 01-instalar.sh en la carpeta config/ 
 ![Arhcivo 01-instalar.sh](img/06-instalar-sh.png)
+
+## 4. Configuración del servidor
+
+Modificamos /etc/default/named y ponemos OPTIONS = "-u bind -4" y hacemos una copia de segurida de /etc/bind/named.conf.options
+
+![Copia de seguridad named.conf.options](img/07-copia-seguridad.png)
+
+Editamos el archivo named.conf.options y comprobamos y reiniciamos que todo se a cambiado perfectamente
+
+![Modificacion de named.conf.options](img/08-conf-options.png)
+![Comprobacion y reinicio](img/09-reinicio-comprobacion.png)
+
+Copiamos los archivos /etc/default/named y /etc/bind/named.conf.options dentro de la carpeta files del proyecto:
+cp /vagrant/files/named /etc/default/named
+cp /vagrant/files/named.conf.options /etc/bind/named.conf.options
+
+Creamos el archivo 02-opciones.sh en la carpeta config
+
+![Archivo 02-opciones.sh](img/10-opciones-sh.png)
+
+Añadimos al vagrant file este nuevo archivo que acabamos de crear.
+
+![Modificacion Vagrantfile](img/11-opciones-añadidas-vagrant.png)
+
