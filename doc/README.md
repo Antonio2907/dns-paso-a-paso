@@ -61,3 +61,34 @@ Añadimos al vagrant file este nuevo archivo que acabamos de crear.
 
 ![Modificacion Vagrantfile](img/11-opciones-añadidas-vagrant.png)
 
+Dentro de la maquina hacemos una copia de seguridad de named.conf.local y añadimos dentro del archivo:
+zone "antonio.test" {
+    type master;
+    file "/var/lib/bind/antonio.test.dns";
+};
+
+Despues creamos el archivo antonio.test.dns con el correspondiente contenido y ambos archivos lo copiamos dentro del proyecto.
+
+![Añadimos el archivo de zona](img/12-archivos.png)
+
+Creamos el archivo 03-zonas.sh dentro de la carpeta config
+
+![Archivo 03-zonas.sh](img/13-zonas-sh.png)
+
+
+Editamos el archivo named.conf.local y añadimos:
+zone "56.168.192.in-addr.arpa" {
+    type master;
+    file "/var/lib/bind/antonio.test.rev";
+}; 
+
+Tambien creamos el archivo antonio.test.rev con las lineas correspondientes.
+Copiamos los dos archivos dentro del proyecto en la carpeta files.
+
+![Archivos zona inversa editados](img/14-archivos-zona-inversa.png)
+ª[Archivos zona inversa editados](img/15-archivos-zona-inversa2.png)
+
+Editamos el archivo 03-zonas.sh y añadimos:
+cp /vagrant/files/antonio.test.rev /var/lib/bind/antonio.test.rev
+
+ª[Archivo 03-zonas.sh editado](img/16-zonas.sh-editado.png)
