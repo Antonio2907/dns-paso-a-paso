@@ -86,9 +86,15 @@ Tambien creamos el archivo antonio.test.rev con las lineas correspondientes.
 Copiamos los dos archivos dentro del proyecto en la carpeta files.
 
 ![Archivos zona inversa editados](img/14-archivos-zona-inversa.png)
-ª[Archivos zona inversa editados](img/15-archivos-zona-inversa2.png)
+![Archivos zona inversa editados](img/15-archivos-zona-inversa2.png)
 
 Editamos el archivo 03-zonas.sh y añadimos:
 cp /vagrant/files/antonio.test.rev /var/lib/bind/antonio.test.rev
 
-ª[Archivo 03-zonas.sh editado](img/16-zonas.sh-editado.png)
+![Archivo 03-zonas.sh editado](img/16-zonas.sh-editado.png)
+
+Comprobamos las configuraciones y las añadimos a 03-zonas.sh
+
+![Comprobacion de configuraciones](img/17-comprobacion-configuraciones.png)
+![Comprobacion de configuraciones](img/18-comprobacion-configuraciones2.png)
+
