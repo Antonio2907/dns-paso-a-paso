@@ -1,0 +1,13 @@
+;
+; antonio.test
+;
+$TTL    86400
+@       IN  SOA debian.antonio.test. admin.antonio.test. (
+                2026101701      ; Serial
+                3600            ; Refresh
+                1800            ; Retry
+                604800          ; Expire
+                86400 )         ; Negative Cache TTL
+;
+@       IN  NS      debian.antonio.test.
+debian.antonio.test.    IN  A       192.168.56.10
