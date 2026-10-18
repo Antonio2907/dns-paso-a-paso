@@ -105,3 +105,18 @@ Comprobamos las configuraciones y las añadimos a 03-zonas.sh
 Comprobamos que desde un cliente el servidor responde con dig y nslookup
 
 ![Dig y nslookup](img/20-dig-nslookup.png)
+
+## 7. Ampliación de registros en la zona
+
+Añadimos un alias y comprobamos con dig y nslookup
+
+![Añadir alias](img/21-registros-came.png)
+
+Añadimos un registro txt en la raiz de la zona y comprobamos que la dirección IP del servidor resuelve a su nombre de dominio complet
+
+![Añadir registro txt](img/22-registros-txt.png)
+![Comprobar direccion ip](img/23-comprobacion-ptr.png)
+
+Realizamos una consulta para tu dominio local y otra para un dominio externo:
+Aparece cuando el servidor responde con datos de una zona propia, y no aparece cuando la respuesta la ha obtenido de otro servidor.
+![Consultas](img/24-consultas.png)
