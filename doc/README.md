@@ -119,4 +119,19 @@ Añadimos un registro txt en la raiz de la zona y comprobamos que la dirección 
 
 Realizamos una consulta para tu dominio local y otra para un dominio externo:
 Aparece cuando el servidor responde con datos de una zona propia, y no aparece cuando la respuesta la ha obtenido de otro servidor.
+
 ![Consultas](img/24-consultas.png)
+
+Creamos un archivo test.sh con permisos de ejecucion en la raiz del proyecto.
+
+![Archivo tst.sh](img/25-testsh.png)
+
+Despues creamos el archivo 04-test.sh en la carpeta config
+
+![Archivo 04-test.sh](img/26-04-test-sh.png)
+
+Por ultimo añadimos la provision la Vagrantfile y hacemos el ultimo vagrant provision para comprobar que todo responde correctamente
+
+![Vagrantfile](img/27-utimo-vagrantfile.png)
+![Vagrant provision](img/28-vagrant-provision.png)
+![Vagrant provision](img/29-vagrant-provision.png)

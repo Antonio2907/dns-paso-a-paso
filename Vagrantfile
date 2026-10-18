@@ -6,4 +6,5 @@ Vagrant.configure("2") do |config|
      config.vm.provision "shell", path: "config/01-instalar.sh"
      config.vm.provision "shell", path: "config/02-opciones.sh"
      config.vm.provision "shell", path: "config/03-zonas.sh"
+     config.vm.provision "shell", path: "config/04-test.sh"
    end
