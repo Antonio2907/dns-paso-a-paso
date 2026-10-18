@@ -97,4 +97,11 @@ Comprobamos las configuraciones y las añadimos a 03-zonas.sh
 
 ![Comprobacion de configuraciones](img/17-comprobacion-configuraciones.png)
 ![Comprobacion de configuraciones](img/18-comprobacion-configuraciones2.png)
+![Comprobacion de configuraciones](img/18-comprobacion-configuraciones3.png)
 
+
+## 5 y 6. Comprobación usando dig y nslookup
+
+Comprobamos que desde un cliente el servidor responde con dig y nslookup
+
+![Dig y nslookup](img/20-dig-nslookup.png)
